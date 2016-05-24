@@ -3,7 +3,11 @@
 @weuiDialogBackgroundColor: #FAFAFC;
 @weuiDialogLineColor: #D5D5D6;
 @weuiDialogLinkColor: #3CC51F;
+<<<<<<< HEAD
 @weuiDialogLinkActiveColor: #F0F0F0;
+=======
+@weuiDialogLinkActiveBc: #EEEEEE;
+>>>>>>> weui/master
 
 .weui_dialog {
     position: fixed;
@@ -16,9 +20,9 @@
     background-color: @weuiDialogBackgroundColor;
     text-align: center;
     border-radius: 3px;
+    overflow: hidden;
     .weui_dialog_confirm & {
         .weui_dialog_hd {
-            text-align: left;
             padding: 1.2em 20px .5em;
         }
         .weui_dialog_bd {
@@ -40,6 +44,8 @@
     padding: 0 20px;
     font-size: 15px;
     color: @globalTextColor;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .weui_dialog_ft {
@@ -54,9 +60,14 @@
         color: @weuiDialogLinkColor;
         text-decoration: none;
         .setTapColor;
+<<<<<<< HEAD
         &:active, &:hover {
             text-decoration: none;
             background-color: @weuiDialogLinkActiveColor;
+=======
+        &:active {
+            background-color: @weuiDialogLinkActiveBc;
+>>>>>>> weui/master
         }
     }
     &:after {
